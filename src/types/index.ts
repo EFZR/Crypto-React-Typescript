@@ -1,4 +1,8 @@
 import { z } from "zod";
-import { CurrencySchema } from "../schemas/cripto-schema";
+import { CryptoCurrenciesSchema, CryptoCurrencySchema, CurrencySchema } from "../schemas/cripto-schema";
 
-export type Currency = z.infer<typeof CurrencySchema>;
+export type TCurrency = z.infer<typeof CurrencySchema>;
+
+export type TCryptoCurrencySchema = z.infer<typeof CryptoCurrencySchema>;
+
+export type TCryptoCurrenciesSchema = z.infer<typeof CryptoCurrenciesSchema>;
