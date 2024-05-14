@@ -1,3 +1,4 @@
+import CriptoPriceDisplay from "./components/CriptoPriceDisplay"
 import CriptoSearchForm from "./components/CriptoSearchForm"
 import "./index.css"
 
@@ -12,6 +13,7 @@ export default function App() {
 
       <div className="content">
         <CriptoSearchForm />
+        <CriptoPriceDisplay />
       </div>
     </div>
   )
